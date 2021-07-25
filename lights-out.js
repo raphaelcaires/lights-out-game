@@ -112,6 +112,8 @@ function randomNumber(upperRange) {
 function setupRandomBoard() {
   console.log("setupRandomBoard");
 
+  document.getElementById("imprime").innerHTML = "LEVEL = " + DIFFICULTY;
+
   for (let i = 0; i < DIFFICULTY; i++) {
     let x = randomNumber(WIDTH);
     let y = randomNumber(HEIGHT);
